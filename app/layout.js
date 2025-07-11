@@ -73,10 +73,10 @@ const satoshi = localFont({
 });
 
 export const metadata = {
-    title: "Handsel Consultancy - World-Class Governance Solutions",
-    description: "Leading organizations with confidence through world-class governance in corporate, cyber, and AI arenas. Expert frameworks, insight, and oversight.",
+    title: "Lucieg Consulting - Strategic Recruitment Partnership",
+    description: "Transform your business with the right talent. We're your strategic recruitment partner, dedicated to scaling your hiring needs and building impactful, lasting teams together.",
     icons: {
-        icon: '/assets/Favicon.svg',
+        icon: '/assets/logo.svg',
     },
 };
 
