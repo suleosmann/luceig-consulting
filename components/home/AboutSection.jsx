@@ -1,6 +1,6 @@
 'use client';
 
-import GroupImage from "@/public/assets/group-image.jpg"
+import GroupImage from "@/public/assets/ornament.jpg"
 import Image from "next/image";
 import { useEffect, useState } from "react";
 

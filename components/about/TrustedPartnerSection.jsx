@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import BusinessMeetingImage from "@/public/assets/business-meeting.jpg";
+import BusinessMeetingImage from "@/public/assets/macbook.jpg";
 
 const TrustedPartnerSection = () => {
     const [isVisible, setIsVisible] = useState(false);
