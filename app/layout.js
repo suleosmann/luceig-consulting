@@ -1,8 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import localFont from 'next/font/local';
 import "./globals.css";
-import Navbar from "@/components/common/Navbar";
-import Footer from "@/components/common/Footer";
+import ConditionalLayout from "@/components/ConditionalLayout";
+import AuthProvider from "@/provider/AuthProvider";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -13,8 +13,6 @@ const geistMono = Geist_Mono({
     variable: "--font-geist-mono",
     subsets: ["latin"],
 });
-
-
 
 const satoshi = localFont({
     src: [
@@ -89,9 +87,9 @@ export default function RootLayout({ children }) {
         <body
             className={`${geistSans.variable} ${geistMono.variable} ${satoshi.variable} antialiased`}
         >
-        <Navbar />
-        {children}
-        <Footer />
+        <AuthProvider>
+            <ConditionalLayout>{children}</ConditionalLayout>
+        </AuthProvider>
         </body>
         </html>
     );
