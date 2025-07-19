@@ -1,8 +1,7 @@
-import React from 'react';
 import Link from 'next/link';
 import { ArrowLeft, Home, Search, Mail, Phone } from 'lucide-react';
 
-export default function Custom404() {
+export default function NotFound() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 flex items-center justify-center p-4">
             <div className="max-w-2xl w-full text-center">
@@ -25,24 +24,21 @@ export default function Custom404() {
                     </p>
                 </div>
 
-                {/* Action Buttons */}
+                {/* Action Buttons - Server Component Safe */}
                 <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
                     <Link href="/" className="inline-flex items-center justify-center px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors duration-200 font-semibold shadow-lg hover:shadow-xl">
                         <Home className="w-5 h-5 mr-2" />
                         Back to Home
                     </Link>
 
-                    <button
-                        onClick={() => window.history.back()}
-                        className="inline-flex items-center justify-center px-6 py-3 bg-white text-slate-700 border-2 border-slate-200 rounded-lg hover:border-indigo-300 hover:bg-slate-50 transition-all duration-200 font-semibold shadow-lg hover:shadow-xl"
-                    >
-                        <ArrowLeft className="w-5 h-5 mr-2" />
-                        Go Back
-                    </button>
+                    <Link href="/contact" className="inline-flex items-center justify-center px-6 py-3 bg-white text-slate-700 border-2 border-slate-200 rounded-lg hover:border-indigo-300 hover:bg-slate-50 transition-all duration-200 font-semibold shadow-lg hover:shadow-xl">
+                        <Mail className="w-5 h-5 mr-2" />
+                        Contact Us
+                    </Link>
 
-                    <Link href="/search" className="inline-flex items-center justify-center px-6 py-3 bg-slate-700 text-white rounded-lg hover:bg-slate-800 transition-colors duration-200 font-semibold shadow-lg hover:shadow-xl">
+                    <Link href="/services" className="inline-flex items-center justify-center px-6 py-3 bg-slate-700 text-white rounded-lg hover:bg-slate-800 transition-colors duration-200 font-semibold shadow-lg hover:shadow-xl">
                         <Search className="w-5 h-5 mr-2" />
-                        Search Site
+                        Our Services
                     </Link>
                 </div>
 
