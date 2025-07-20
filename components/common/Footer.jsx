@@ -63,7 +63,7 @@ const Footer = () => {
                                 <span className="font-semibold">C:</span> +44 204 5113 383
                             </p>
                             <p className="text-white/90">
-                                <span className="font-semibold">E:</span> info@luciegconsulting.co.uk
+                                <span className="font-semibold">E:</span> info@luciegconsulting.com
                             </p>
                             <p className="text-white/90">
                                 <span className="font-semibold">W:</span> https://luciegconsulting.co.uk
