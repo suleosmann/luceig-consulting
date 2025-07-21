@@ -66,7 +66,7 @@ const Footer = () => {
                                 <span className="font-semibold">E:</span> info@luciegconsulting.com
                             </p>
                             <p className="text-white/90">
-                                <span className="font-semibold">W:</span> https://luciegconsulting.co.uk
+                                <span className="font-semibold">W:</span> https://luciegconsulting.com
                             </p>
                         </div>
                     </div>
@@ -100,7 +100,7 @@ const Footer = () => {
             <div className="border-t border-white px-8 sm:px-12 lg:px-16 xl:px-20 py-6">
                 <div className="text-left">
                     <p className="text-white/80 text-sm">
-                        Copyright © 2025 Luciegconsulting.co.uk * | All rights reserved
+                        Copyright © 2025 Luciegconsulting.com * | All rights reserved
                     </p>
                 </div>
             </div>
